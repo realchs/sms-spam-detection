@@ -1,6 +1,27 @@
 https://drive.google.com/drive/folders/1vtMPbYE0nt-aLYTpJ7iMjytfbOxR42i7?usp=sharing
 // 링크
 
-// 데이터셋 출처: AI HUB - 한국어SNS
-// KOREAN SNS - training, validation
-// csv (임시) -> type,topic,utterance
+
+// 데이터셋 출처: AI HUB - 한국어SNS 
+// 2020년/200만건
+// 말차례 수: 대화당 최소 4회, 평균 8회 내외, 총 1,600만회 내외
+// 발화 수: 대화당 최소 8회, 총 3,200만회 내외
+// 데이터셋 구축 담당자 
+// 수행기관(주관) : 포티투마루
+
+
+// KOREAN SNS - training(1 ~ 9), validation(1 ~ 9)
+// csv (column) -> type,topic,utterance
+
+/* 
+1 : 개인및관계
+2 : 미용과건강
+3 : 상거래(쇼핑)
+4 : 시사교육
+5 : 식음료
+6 : 여가생활
+7 : 일과직업
+8 : 주거와생활
+9 : 행사
+*/
+// Index information
