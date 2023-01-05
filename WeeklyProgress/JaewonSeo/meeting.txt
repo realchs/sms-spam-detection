@@ -29,6 +29,14 @@ week 1
 SPAM + HAM 데이터 분석
 
 kaggle -> feature emgineering -> boosting기법
-거대모델 bert (트랜스퍼)-> fine tuning
+거대모델 bert (트랜스포머)-> fine tuning
 
 관련 논문 : 소셜 네트워크 기반 대량의 SMS 스팸 데이터 재구성 기법
+
+Week2
+전처리
+microsoft presidio -> 카톡 링크
+spacy? -> 모델에 가면 데이터 다운 가능
+pip로 다운 가능
+한글은 정확도가 낮을 수도
+최미소님에게 방법 제시해주신대로 전달드리기

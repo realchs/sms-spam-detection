@@ -12,7 +12,7 @@ twitter_api = twitter.Api(consumer_key=twitter_consumer_key,
                     access_token_secret=twitter_access_secret)
 
 def keyword(query, output_file_name):
-        statuses = twitter_api.GetSearch(term=query, count=100)
+        statuses = twitter_api.GetSearch(term=query, count=1000)
 
         for status in statuses:
             print(status.text)
@@ -22,4 +22,6 @@ def keyword(query, output_file_name):
                 print(status.text, file=output_file)
 
 if __name__=="__main__":
-    keyword("#안내", "안내.txt")
+    arrs = ["근데", "그냥", "했어"]
+    for arr in arrs:
+        keyword(arr, "대화.txt")
