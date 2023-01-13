@@ -1,0 +1,87 @@
+----------------------------------------
+페이즈 : 1
+----------------------------------------
+long topic : 4834273
+long utterance : 4834273
+short topic : 856967
+short utterance : 856967
+total topic : 5691240
+total utterance : 5691240
+----------------------------------------
+페이즈 : 2
+----------------------------------------
+long topic : 1022525
+long utterance : 1022525
+short topic : 187401
+short utterance : 187401
+total topic : 1209926
+total utterance : 1209926
+----------------------------------------
+페이즈 : 3
+----------------------------------------
+long topic : 1169486
+long utterance : 1169486
+short topic : 230378
+short utterance : 230378
+total topic : 1399864
+total utterance : 1399864
+----------------------------------------
+페이즈 : 4
+----------------------------------------
+long topic : 966096
+long utterance : 966096
+short topic : 190053
+short utterance : 190053
+total topic : 1156149
+total utterance : 1156149
+----------------------------------------
+페이즈 : 5
+----------------------------------------
+long topic : 1408783
+long utterance : 1408783
+short topic : 275045
+short utterance : 275045
+total topic : 1683828
+total utterance : 1683828
+----------------------------------------
+페이즈 : 6
+----------------------------------------
+long topic : 1920502
+long utterance : 1920502
+short topic : 370304
+short utterance : 370304
+total topic : 2290806
+total utterance : 2290806
+----------------------------------------
+페이즈 : 7
+----------------------------------------
+long topic : 1174623
+long utterance : 1174623
+short topic : 191857
+short utterance : 191857
+total topic : 1366480
+total utterance : 1366480
+----------------------------------------
+페이즈 : 8
+----------------------------------------
+long topic : 1995171
+long utterance : 1995171
+short topic : 357261
+short utterance : 357261
+total topic : 2352432
+total utterance : 2352432
+----------------------------------------
+페이즈 : 9
+----------------------------------------
+long topic : 1396369
+long utterance : 1396369
+short topic : 271131
+short utterance : 271131
+total topic : 1667500
+total utterance : 1667500
+----------------------------------------
+
+========================================
+data_num = 18818225
+========================================
+
