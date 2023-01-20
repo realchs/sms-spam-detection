@@ -24,7 +24,7 @@ def keyword(query, output_file_name):
 
 if __name__=="__main__":
     arr1 = pd.read_excel("word.xls", usecols=["단어"])
-    # print(arr1)
+    print(arr1)
     df_dic = arr1.to_dict()
     arr2 = df_dic["단어"].values()
     arr2_list = list(arr2)
