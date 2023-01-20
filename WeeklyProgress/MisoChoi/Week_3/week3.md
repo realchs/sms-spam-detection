@@ -8,11 +8,11 @@
     - 스팸유형이 NaN인 행 제외
     - 컬럼으로 스팸유형, 메시지만 남김
 - 스팸 유형 Count
- <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ba5652f-7543-4ffd-ad91-3e8862a26dda/Untitled.png">
+<img src=./spam_week3_img1.png width=600>
 
 - 메시지 타입 Count
 
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74876f33-f7ca-447c-97b7-4352a2c10e6b/Untitled.png">
+<img src=./spam_week3_img2.png width=600>
 
 ## Text Analysis
 ### Text Clustering
