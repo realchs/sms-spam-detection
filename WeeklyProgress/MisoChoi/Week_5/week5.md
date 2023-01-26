@@ -7,7 +7,7 @@
 ### Topic Probability Distribution
 <img src=./topic_probability_ham.png width=700>
 
-### Topic List (Top-25)
+### Topic List (Top-28)
 <img src=./topic_list_ham.png width=700>
 
 
@@ -20,5 +20,5 @@
 ### Topic Probability Distribution
 <img src=./topic_probability_spam.png width=700>
 
-### Topic List (Top-25)
+### Topic List (Top-49)
 <img src=./topic_list_spam.png width=700>
