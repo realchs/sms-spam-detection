@@ -1,3 +1,3 @@
 // https://drive.google.com/drive/folders/18SSL4dqtbwLCW5yiDt2AdV9tV4rG3h_8
 // 3주차 자료는 용량문제로 구글드라이브로 공유합니다
-// 코로나에 걸려서 koreansns 데이터셋 전처리외에는 하지못했습니다.  
+// 코로나에 걸려서 koreansns 데이터셋 전처리(불필요공백 제거, 특정단어 제거, 중복 제거, 길이구분 등)외에는 하지못했습니다.  
