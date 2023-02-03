@@ -29,6 +29,24 @@ GPT는 트랜스포머 디코더를 메인 디자인으로 삼았다
 <트랜스포머>
 English -> Encoder -> Decoder -> German
 
+<트랜스포머 이전 트랜드>
+English => Encoder -> Decoder -> Korean
+순차입력
+
+(start token)   (end token)
+↓               ↓
+난     꼬마    입니다
+↑       ↑       ↑
+R → ↓   R → ↓   R
+↑   ↓   ↑   ↓   ↑
+[     Attention     ]    ←
+↑   ↑   ↑    ↑      ↑    ↑
+e0  e1 e2    e3     e4   ↑
+↑   ↑   ↑    ↑      ↑    ↑
+R → R → R →  R   →  R  → e4 
+↑   ↑   ↑    ↑      ↑
+i  am   a  littel  boy
+
 문장의 단어가 여러개 존재해도 한번에 연산이 가능하다
 RNN은 단어가 일곱개면 일곱개를 순차적으로 계산했어야만 했다.
 
