@@ -1,12 +1,28 @@
 /*
 GPT-1(Generative Pre Training of a language model) - 2018 June, OpenAI
 
+#Pre Training?
+선행학습, 사전훈련, 전처리과정이라고도 하는데 Multi Layered Perceptron(MLP)에서 Weight와 Bias를 잘 초기화 시키는 방법
+이 방법을 통해서 효과적으로 Layer를 쌓아 여러개의 Hidden Layer도 효율적으로 훈련 가능
+또한 이는, 비지도학습이 가능하기 때문에 레이블이 되지 않은 큰 데이터를 넣어 훈련시킬 수 있는 장점이 존재하며
+Drop-out, Mini-batch 방식을 사용하여 이를 생략하기도 한다.
+
+#Fine Tuning?
+기존에 학습되어져 있는 모델을 기반으로 아키텍쳐를 새로운 목적(나의 이미지 데이터에 맞게) 변형하고, 이미 학습된 모델 
+Weights로부터 학습을 업데이트하는 방법을 말한다.
+- 모델의 파라미터를 미세하게 조정하는 행위 (특히 딥러닝에서는 이미 존재하는 모델에 추가 데이터를 투입하여 파라미터를 업데이트)
+- 파인튜닝은 정교한 파라미터 튜닝이라고 생각하면 되는데 "정교한" 과 "파라미터"가 키포인트들이다.
+- 파인튜닝을 했다고 말하려면 기존에 학습이 된 레이어에 내 데이터를 추가로 학습시켜 파라미터를 업데이트 해야 한다.
+
+*/
+/*
+
 language model의 예시 -> 구글검색창에 youtube deep을 입력했을떄 그 다음에 나올 단어를 예측하여 추천
 language model의 특징은 특별히 레이블링이 필요하지 않음
 다른 모델들은 대부분 레이블링이 필요로 했음, 사람이 직접 레이블링 하는경우에는 굉장히 오래걸리고 100% 정확한 답을 가지고 있지 않음
 
-정말로 엄청 많은 텍스트를 가지고 언어모델을 학습시키면 오류율도 적어지고 또한 자연어의 우리가 알지못하는 특징도 학습하여서 아주 뛰어난 자연어처리모델을 만들어낼수있다는게
-ㄴ GPT-1의 핵심
+정말로 엄청 많은 텍스트를 가지고 언어모델을 학습시키면 오류율도 적어지고 또한 자연어의 우리가 알지못하는 특징도 학습하여서
+아주 뛰어난 자연어처리모델을 만들어낼수있다는것이 GPT-1의 핵심
 
 머신러닝을 두가지로 나눈다면
 Generative model와 discriminative model으로 나눌 수 있다.
@@ -63,9 +79,10 @@ GPT-1
 Natural Language Inference - 2문장이 주어졌을때 두문장의 관계(ex 참거짓), (Sentence1 Sentence2 Label)
 Question Answering - 딥러닝 모델에게 관련된 정보와, 질문을 주면 정보에서 정답을 찾는지 테스트, (Sentence1 Sentence2, Label)
 Semantic Similarity - 두 문장이 비슷한지 아닌지, (Sentence1, Sentence2, Label)
+Classification - 주어진 문장을 분류 (Sentence1, Label)
 
-
-
+Train - 총 2번의 학습이 있습니다.
+방대한 양의 label이 없는 텍스트라를 통한 언어모델 비지도학습
 
 
 
