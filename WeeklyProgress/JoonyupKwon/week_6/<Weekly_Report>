@@ -82,13 +82,35 @@ Semantic Similarity - 두 문장이 비슷한지 아닌지, (Sentence1, Sentence
 Classification - 주어진 문장을 분류 (Sentence1, Label)
 
 Train - 총 2번의 학습이 있습니다.
-방대한 양의 label이 없는 텍스트라를 통한 언어모델 비지도학습
+방대한 양의 label이 없는 텍스트라를 통한 언어모델 비지도학습 후, 파인튜닝(지도학습)
+
+GPT-1은 트랜스포머의 디코더로 구성되어 있다
+기존에는 목적에따라 레이어를 추가로 배치해야했는데, 이는 적지않은 시간과 노력이 필요했다
+GPT는 이를 제외시켰다. 단순히 모델 그대로 유지하고 모델에 입력값을 넣고 최적화하는것이 파인튜닝의 전부이다.
+
+I am Happy -> Pretrained LM(Transformer Decoder) -> Linear -> Softmax -> positive
+Sentence1 $(delimiter) Sentence 2 -> Pretrained LM(Transformer Decoder) -> Linear -> Softmax -> entailment
+
+<Trend before GPT 1>
+
+Well trained model -> Task Specific model -> prediction
+                               ↑ 
+       Introduce significant amount of task specific customization
+
+<GPT-1>
+GPT-1 -> prediction
+  ↑
+just use structured input for task specific tuning so pre-trained LM(Transformer Decoder) can process
 
 
+#Tokenization Evolution (BPE: Byte Pair Encoding)
 
+Word 임베딩의 장점은 단어간의 유사도를 가지고있음, 단점은 학습시에 보지 못했던 단어들은 단순히 유사도가 전혀 존재할수없는
+제로백터로 처리되기 때문에 신조어, 오타자에 상당히 약하다.
 
+Char 임베딩을 사용할 경우에 단어는 일정한 Char의 집합이기 때문에 단어간의 유사도가 확실히 word 임베딩에 비해서 떨어짐
 
-
+...
 
 
 
