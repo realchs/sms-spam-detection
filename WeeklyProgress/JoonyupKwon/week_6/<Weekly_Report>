@@ -60,9 +60,9 @@ RNN은 단어가 일곱개면 일곱개를 순차적으로 계산했어야만 �
 트랜스포머 디코더를 사용하는 GPT
 
 GPT-1
-Natural Language Inference - 2문장이 주어졌을때 두문장의 관계, (Sentence1 Sentence2 Label)
-
-
+Natural Language Inference - 2문장이 주어졌을때 두문장의 관계(ex 참거짓), (Sentence1 Sentence2 Label)
+Question Answering - 딥러닝 모델에게 관련된 정보와, 질문을 주면 정보에서 정답을 찾는지 테스트, (Sentence1 Sentence2, Label)
+Semantic Similarity - 두 문장이 비슷한지 아닌지, (Sentence1, Sentence2, Label)
 
 
 
