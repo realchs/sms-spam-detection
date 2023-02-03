@@ -1,5 +1,5 @@
 /*
-GPT-1(Generative Pre Training of a language model)
+GPT-1(Generative Pre Training of a language model) - 2018 June, OpenAI
 
 language model의 예시 -> 구글검색창에 youtube deep을 입력했을떄 그 다음에 나올 단어를 예측하여 추천
 language model의 특징은 특별히 레이블링이 필요하지 않음
@@ -26,7 +26,7 @@ GPT는 트랜스포머 디코더를 메인 디자인으로 삼았다
 트랜스포머는 Attention is all you need라는 논문에서 소개된 딥러닝 모델이다.
 기존 모델들이 RNN에 의존했던것과 달리 트랜스포머는 RNN에 의존하지않고, attention 메카니즘을 사용한다.
 
-<트랜스포머>
+<트랜스포머> - 2017 June Google - Manchine Translation
 English -> Encoder -> Decoder -> German
                                                                            p0 <start token>, p1 ....
                                                                            ↓
@@ -34,7 +34,7 @@ I  am  a  little  boy -> [Attention] -> [FC] -> [e0, e1, e2, e3, e4] -> [Attenti
 p0 p1  p2   p3    p4
 
 
-<트랜스포머 이전 트랜드>
+<트랜스포머 이전 트랜드, RNN>
 English => Encoder -> Decoder -> Korean
 순차입력
 
@@ -44,6 +44,7 @@ English => Encoder -> Decoder -> Korean
 ↑       ↑       ↑
 R → ↓   R → ↓   R
 ↑   ↓   ↑   ↓   ↑
+--------------------------------------- ↑ Decoder, ↓ Encoder
 [     Attention     ]    ←
 ↑   ↑   ↑    ↑      ↑    ↑
 e0  e1 e2    e3     e4   ↑
