@@ -58,14 +58,8 @@ Sentence-BERT(SBERT)는 BERT의 출력에 풀링 연산을 추가한 모델
 
 (Max-over-time pooling: 문장의 길이가 다 다르면 문장마다의 feature map 개수가 달라지는데, 모든 문장마다 하나의 값을 갖도록 feature map 벡터 중 가장 큰 값 하나만 사용하는 것)
 
-![텍스트이(가) 표시된 사진
+![](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.002.png)
 
-자동 생성된 설명](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.002.png)
+![](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.003.png)
 
-![텍스트이(가) 표시된 사진
-
-자동 생성된 설명](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.003.png)
-
-![텍스트이(가) 표시된 사진
-
-자동 생성된 설명](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.004.png)
+![](Aspose.Words.840be87f-87e6-44d8-89d6-53fcbdf86b53.004.png)
