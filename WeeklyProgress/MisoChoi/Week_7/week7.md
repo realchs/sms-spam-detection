@@ -5,22 +5,21 @@
 - 적은 튜닝으로도 좋은 결과 → pre-trained vector가 ‘universal’ feature extractors임을 의미함.
 - 추가 튜닝 : fine-tuning으로 task-specific(classification) vector를 학습.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fab2a139-0e1f-4efd-9c8c-9337f2871d73/Untitled.png)
+<img src=./conv_sen_fig1.png width=700>
 
 [Backgrounds]
 
 - word embedding : 글자 → 숫자
 - CNN (Convolution Neural Networks)
     - CNN 그림
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e54f3c-f8b7-4ade-95bc-a3503c639f0e/Untitled.png)
+        <img src=./conv.png width=700>
         
     - Convolution : 이미지 특징 추출기
         - *convolution layer와 pooling layer를 여러겹 쌓는 방식으로 구성됨.*
         - convolution
         - pooling : 크기 조정
         
-        ![convolution.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ef34270-a2f8-4c93-adb1-31c16c9c30b4/convolution.gif)
+        <img src=./convolution.gif width=250>
         
     - Classifier : 클래스 분류기
 
@@ -29,13 +28,12 @@
 - Motivation
     - 문장 내 연이어 위치해 있지 않은 단어간의 correlation을 학습하기 위해
     - long-term contextual information을 학습하기 위해
-- Attention mechanism 도입
+- Attention layer를 추가함
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8e61c225-a801-4073-975e-0c9fe2aece1d/Untitled.png)
+     <img src=./att_cnn.png width=400>
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6117b7f4-c5c8-451b-8d0e-fe553ceb6173/Untitled.png)
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c56bcf31-419e-420d-82ce-12fe17c2b6eb/Untitled.png)
+    <img src=./eq3.png width=600>
+    <img src=./eq4.png width=600>
     
     - example
         
